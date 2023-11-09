@@ -13,7 +13,7 @@ export class BookController {
     }
 
     @Post('add')
-    addBook(@Body() book: Book) : string {
+    addBook(@Body() book: Book) : string {  
         return this.bookService.addBookService(book);
     }
 
