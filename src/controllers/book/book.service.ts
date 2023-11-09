@@ -1,4 +1,4 @@
-import { Book } from "./data/book.interface.dto";
+import { Book } from "./dto/book.interface.dto";
 import { Injectable } from "@nestjs/common"
 import { v4 as uuidv4 } from 'uuid';
 
