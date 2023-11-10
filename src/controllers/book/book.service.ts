@@ -24,13 +24,13 @@ export class BookService {
     // delete book
     deleteBookService(bookId: string): string {
         this.books = this.books.filter(book => {
-            return book.id === bookId
+            return book.id !== bookId
         });
         return 'Book is deleted Successfully'
     }
 
     // get all books
     getBooksService(): Book[] {
-    return this.books;
-}
+        return this.books;
+    }
 }
